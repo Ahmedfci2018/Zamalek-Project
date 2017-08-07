@@ -69,7 +69,7 @@
               </th>
 
 			  <th>
-               <form align="right" name="form"   method="self" onclick="news()">
+               <form align="right" name="form" id="fo" method="self" onclick="news()">
                    <input type="submit" value="اخـر الاخـبـار "> 
                </form>
        
@@ -105,7 +105,8 @@
    <script>
        function news(){
            if(navigator.onLine){
-               return "http://www.zamalekfans.com";
+               document.getElementById('fo').action='http://www.akhbarelzamalek.com/';
+               
            }
            else
                alert('Check your internet connection');
